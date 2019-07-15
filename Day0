@@ -1,0 +1,37 @@
+21天学通C++
+第三章，3.16， page22.
+命名约定，函数名MultiplyNumbers(), 每个单词的首字母大写，这被称为Pascal拼写法。
+变量名firstNumber，secondNumber，multiplicationResult，第一个单词首字母小写，这被称为骆驼写法。
+还有一种C++代码，在变量名开头包含指出变量类型的字符，如iFirstNumber,i表示整型，如果是全局变量，其名称为g_iFirstNumber。这被称为匈牙利表示法。
+这几年，匈牙利表示法不那么流行了，原因主要是IDE改善很多，能够在需要的时候显示变量类型。
+代码示例，
+#include <iostream>
+
+using namespace std;
+
+void multiplynumbers()
+{
+   cout << "please enter first number: ";
+   int firstnumber = 0;
+   cin >> firstnumber;
+   cout << "please enter second number: ";
+   int secondnumber = 0;
+   cin >> secondnumber;
+   
+   //multiply two numbers
+   int result = firstnumber * secondnumber;
+   cout << "\n" << firstnumber << " * " << secondnumber;
+   cout << " = " << result << endl;
+}
+
+
+int main()
+{
+   cout << "Hello World" << endl; 
+   
+   cout <<"\n "<< "这个程序 will help you multiply to number" << endl <<endl;
+   multiplynumbers();
+
+   
+   return 0;
+}
